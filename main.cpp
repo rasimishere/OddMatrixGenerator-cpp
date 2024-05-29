@@ -30,6 +30,18 @@ for (int i = 0; i < rows; ++i) {
     }
 }
 
+cout << "\nArray with only odd values:\n";
+for (int i = 0; i < rows; ++i) {
+    for (int j = 0; j < cols; ++j) {
+        cout << arr[i][j] << " ";
+    }
+    cout << endl;
+}
+
+for (int i = 0; i < rows; ++i) {
+    delete[] arr[i];
+}
+delete[] arr;
 
     return 0;
 }
